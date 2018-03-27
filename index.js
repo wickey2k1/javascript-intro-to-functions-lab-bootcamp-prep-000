@@ -1,31 +1,22 @@
+var uppercase, lowercase;
+
 function shout(string) {
-  return string.toUpperCase();
+  uppercase = string.toUpperCase();
+  string = uppercase;
+  return uppercase;
 }
 function whisper(string) {
-  return string.toLowerCase();
+  lowercase = string.toLowerCase();
+  string = lowercase;
+  return lowercase;
 }
 
 function logShout(string) {
-  var spy = string.toUpperCase;
-  console.log(spy);
+  uppercase = string.toUpperCase();
+  string = uppercase;
+  console.log(uppercase);
 }
 
 
-describe('whisper(string)', function() {
-  it('receives one argument and returns it in all lowercase', function() {
-    expect(whisper('HELLO')).toEqual('hello')
-  })
-})
 
-describe('logShout(string)', function() {
-  it('calls console.log() its one argument in all caps', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logShout('hello')
-
-    expect(spy).toHaveBeenCalledWith('HELLO')
-
-    console.log.restore()
-  })
-})
 
