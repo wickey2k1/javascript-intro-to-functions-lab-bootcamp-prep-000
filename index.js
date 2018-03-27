@@ -23,10 +23,12 @@ function logWhisper(string) {
 }
 function sayHiToGrandma(string) {
   if (string.toLowerCase === string) {
-    console.log ("I can't hear you!");
-  } else if (string === uppercase) {
-    console.log ("YES INDEED!");
-  } else {
+    return ("I can't hear you!");
+  } 
+  if (string.toUpperCase === string) {
+    return ("YES INDEED!");
+  } 
+  if (string === '' {
     console.log ("I love you, too.");
   }
 }
